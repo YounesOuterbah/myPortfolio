@@ -1,17 +1,17 @@
-import { useState } from "react";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
+import { useDarkMode } from "../../context/DarkModeProvider";
 
 export const Header = () => {
-  const [iconToggle, setIconToggle] = useState(true);
+  const { darkMode, toggleDarkMode } = useDarkMode();
   return (
-    <div className="header py-6 mb-12 shadow-md bg-white" style={{ position: "sticky", top: 0, zIndex: 100 }}>
+    <div
+      className={`${darkMode ? "dark bg-[#2d2e32]" : "bg-white"} py-6 mb-12 shadow-md`}
+      style={{ position: "sticky", top: 0, zIndex: 100 }}
+    >
       <div className="container flex items-center justify-between">
-        <div className="logo font-semibold text-2xl">YOUNES</div>
-        <div
-          className="bg-[#eee] p-2 rounded-full cursor-pointer"
-          onClick={() => setIconToggle(!iconToggle)}
-        >
-          {iconToggle ? <BsFillSunFill /> : <BsMoonFill />}
+        <div className="logo font-semibold text-2xl dark:text-white">YOUNES</div>
+        <div className="bg-[#eee] p-2 rounded-full cursor-pointer" onClick={toggleDarkMode}>
+          {darkMode ? <BsFillSunFill /> : <BsMoonFill />}
         </div>
       </div>
     </div>

@@ -1,11 +1,17 @@
 import Lottie from "lottie-react";
 import prog from "/public/img/prog.json";
+import { useDarkMode } from "../../context/DarkModeProvider";
 
 export const About = () => {
+  const { darkMode } = useDarkMode();
   return (
     <div className="about pt-20 pb-24">
       <div className="container">
-        <div className="content relative flex justify-between flex-col lg:flex-row md:w-[90%] mx-auto p-8 rounded-2xl bg-[#eee] @apply shadow-[rgba(0,0,0,0.18)_0px_2px_4px]">
+        <div
+          className={`content relative flex justify-between flex-col lg:flex-row md:w-[90%] mx-auto p-8 rounded-2xl ${
+            darkMode ? "bg-white" : "bg-[#eee]"
+          } @apply shadow-[rgba(0,0,0,0.18)_0px_2px_4px]`}
+        >
           <div className="w-full h-full lg:w-96 lg:h-96 overflow-hidden rounded-2xl">
             <img src="/public/img/coding.webp" alt="myPic" className="object-cover h-full" />
           </div>
