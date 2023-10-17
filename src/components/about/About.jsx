@@ -1,6 +1,8 @@
 import Lottie from "lottie-react";
 import prog from "/public/img/prog.json";
 import { useDarkMode } from "../../context/DarkModeProvider";
+import codingLaptop from "/public/img/coding.webp";
+import spinDev from "/public/img/spin.svg";
 
 export const About = () => {
   const { darkMode } = useDarkMode();
@@ -13,14 +15,10 @@ export const About = () => {
           } @apply shadow-[rgba(0,0,0,0.18)_0px_2px_4px]`}
         >
           <div className="w-full h-full lg:w-96 lg:h-96 overflow-hidden rounded-2xl">
-            <img src="/public/img/coding.webp" alt="myPic" className="object-cover h-full" />
+            <img src={codingLaptop} alt="myPic" className="object-cover h-full" />
           </div>
           <div className="img absolute hidden lg:block bottom-2 left-[20rem] rounded-full w-36  bg-white">
-            <img
-              src="/public/img/spin.svg"
-              className="animate-spin"
-              style={{ animationDuration: "15s" }}
-            />
+            <img src={spinDev} className="animate-spin" style={{ animationDuration: "15s" }} />
             <Lottie animationData={prog} className="absolute top-8 right-10 w-2/4" />
           </div>
           <div className="text flex-1 mt-6 lg:ml-14">

@@ -1,5 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { RiShareBoxFill } from "react-icons/ri";
+import buy2coin from "/public/img/buy2coin.png";
 
 export const Buy2coin = () => {
   return (
@@ -38,9 +39,9 @@ export const Buy2coin = () => {
         target="_blank"
       >
         <img
-          src="/public/img/buy2coin.png"
+          src={buy2coin}
           className=" duration-[8000ms] md:duration-[15000ms] hover:-translate-y-[42rem] md:hover:-translate-y-[65rem]"
-          alt="Shopily Image"
+          alt="Buy2coin Image"
         />
       </a>
     </>
