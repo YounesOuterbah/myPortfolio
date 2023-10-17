@@ -32,13 +32,17 @@ export const Shopily = () => {
           </a>
         </div>
       </div>
-      <div className="rounded-2xl overflow-hidden h-[12rem] md:h-[20rem] md:w-[120rem] shadow relative group">
+      <a
+        className="rounded-2xl cursor-pointer overflow-hidden h-[12rem] md:h-[20rem] md:w-[120rem] shadow relative group"
+        href="https://shopily-app.netlify.app/"
+        target="_blank"
+      >
         <img
           src="/public/img/shopily.png"
           className=" duration-[5500ms] hover:-translate-y-[12rem] md:hover:-translate-y-[22rem]"
           alt="Shopily Image"
         />
-      </div>
+      </a>
     </>
   );
 };

@@ -32,13 +32,17 @@ export const Buy2coin = () => {
           </a>
         </div>
       </div>
-      <div className="rounded-2xl overflow-hidden h-[12rem] md:h-[20rem] md:w-[120rem] shadow relative group">
+      <a
+        className="rounded-2xl cursor-pointer overflow-hidden h-[12rem] md:h-[20rem] md:w-[120rem] shadow relative group"
+        href="https://buy2coin.netlify.app/"
+        target="_blank"
+      >
         <img
           src="/public/img/buy2coin.png"
           className=" duration-[8000ms] md:duration-[15000ms] hover:-translate-y-[42rem] md:hover:-translate-y-[65rem]"
           alt="Shopily Image"
         />
-      </div>
+      </a>
     </>
   );
 };
