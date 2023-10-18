@@ -4,7 +4,7 @@ import { Skills } from "./components/skills/Skills";
 
 function App() {
   return (
-    <div className="boss text-[#bdbddd]">
+    <div className="boss bg-[#23283e] text-[#bdbddd]">
       <Header />
       <Landing />
       <Skills />
