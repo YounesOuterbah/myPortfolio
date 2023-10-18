@@ -13,8 +13,10 @@ export const Buy2coin = () => {
           fluctuations
         </p>
         <div className="mt-6 font-bold">
-          <span className="mr-2 p-2 border shadow">REACT</span>
-          <span className="p-2 border shadow">TAILWIND</span>
+          <span className="mr-2 p-2 border @apply shadow-[0_3px_3px_0_rgba(0,0,0,0.15)]">
+            REACT
+          </span>
+          <span className="p-2 border @apply shadow-[0_3px_3px_0_rgba(0,0,0,0.15)]">TAILWIND</span>
         </div>
         <div className="flex justify-center mt-8 text-xl">
           <a
