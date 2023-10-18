@@ -1,5 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { RiShareBoxFill } from "react-icons/ri";
+import shopily from "../../../public/img/shopily.png";
+
 export const Shopily = () => {
   return (
     <>
@@ -38,7 +40,7 @@ export const Shopily = () => {
           target="_blank"
         >
           <img
-            src="/public/img/shopily.png"
+            src={shopily}
             className=" duration-[5500ms] hover:-translate-y-[12rem] md:hover:-translate-y-[22rem]"
             alt="Shopily Image"
           />
