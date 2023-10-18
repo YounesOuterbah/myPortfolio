@@ -2,7 +2,7 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <div className="skills py-6">
+    <div className="skills py-4">
       <div className="container">
         <h1 className="text-center text-3xl font-bold">SKILLS</h1>
         <ul className="flex mt-6 justify-center">
