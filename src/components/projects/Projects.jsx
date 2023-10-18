@@ -3,7 +3,7 @@ import { Shopily } from "./Shopily";
 
 export const Projects = () => {
   return (
-    <div className="projects py-6">
+    <div className="projects py-6" id="projects">
       <div className="container">
         <h1 className="text-center text-3xl font-bold">PROJECTS</h1>
         <div className="project-container mt-6">

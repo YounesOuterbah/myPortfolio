@@ -2,10 +2,10 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <div className="skills py-4">
+    <div className="skills py-4" id="skills">
       <div className="container">
         <h1 className="text-center text-3xl font-bold">SKILLS</h1>
-        <ul className="flex mt-6 justify-center">
+        <ul className="flex mt-6 justify-center gap-2 md:gap-0 flex-wrap">
           <li className="w-20 p-2 bg-[#2a2f4c] hover:scale-105 duration-300 @apply shadow-[0_3px_3px_0_rgba(0,0,0,0.15)] mr-6">
             <svg viewBox="0 0 128 128">
               <path
