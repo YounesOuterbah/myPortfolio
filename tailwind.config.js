@@ -10,7 +10,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Rubik", ...defaultTheme.fontFamily.sans],
+        sans: ["Ubuntu", ...defaultTheme.fontFamily.sans],
+        serif: ["Roboto"],
       },
     },
   },
