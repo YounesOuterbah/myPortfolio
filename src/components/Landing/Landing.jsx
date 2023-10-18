@@ -16,8 +16,12 @@ export const Landing = () => {
           trends and am eager to contribute to innovative projects.
         </p>
         <div className="icons flex justify-center -mt-8 text-2xl">
-          <BsLinkedin className="cursor-pointer hover:text-[#90a0d9] duration-300 mr-5" />
-          <BsGithub className="cursor-pointer hover:text-[#90a0d9] duration-300" />
+          <a href="https://www.linkedin.com/in/younesouterbah/" target="_blank">
+            <BsLinkedin className="cursor-pointer hover:text-[#90a0d9] duration-300 mr-5" />
+          </a>
+          <a href="https://github.com/YounesOuterbah" target="_blank">
+            <BsGithub className="cursor-pointer hover:text-[#90a0d9] duration-300" />
+          </a>
         </div>
       </div>
     </div>
