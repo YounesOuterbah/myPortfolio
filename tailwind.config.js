@@ -10,8 +10,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Ubuntu", ...defaultTheme.fontFamily.sans],
-        serif: ["Roboto"],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
   },
